@@ -1,0 +1,6 @@
+<h1> Songs Homepage <h1>
+
+<%= @songs.each do |song|%>
+<p> <%= song.title%> </p>
+<%= link_to song.title, song_path(song) %>
+    <%end%>
